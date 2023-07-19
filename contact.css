@@ -257,8 +257,19 @@ section{
 }
 
 .socials a{
+    font-size: 1.5rem;
     animation: 2s slideup;
-    padding: 0 5.5rem;
-    /* margin: 0 -5rem; */
+    margin: 1rem 7rem;
 }
 
+.socials .fa-github:hover{
+    color: rgb(8, 136, 72);
+}
+
+.socials .fa-twitter:hover{
+    color: rgb(29,161,242);
+}
+
+.socials .fa-instagram:hover{
+    color: rgb(217,44,110);
+}
