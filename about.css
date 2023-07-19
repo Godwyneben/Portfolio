@@ -121,7 +121,7 @@ header .clock {
     }
 }
 
-.navbar li a::before{
+.navbar li .home::before{
     content:" Home";
     position: absolute;
     color: #0B0A0A;
@@ -131,9 +131,14 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar a:hover::before{
-    height: 3.25rem;
-    width: 100%;
+.navbar li a::before{
+    content:" Projects";
+    position: absolute;
+    color: #0B0A0A;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 .navbar .contact::before{
@@ -144,6 +149,11 @@ header .clock {
     width: 0%;
     overflow: hidden;
     transition: all 0.3s;
+}
+
+.navbar a:hover::before{
+    height: 3.25rem;
+    width: 100%;
 }
 
 .navbar.active{
