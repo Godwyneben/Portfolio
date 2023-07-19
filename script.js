@@ -31,13 +31,13 @@ function toggle(){
     navbar.classList.toggle('active');
 }
 
-// remove menu when li is clicked
-let nav = document.querySelector('#nav');
-let removeNav = document.querySelector('.navbar');
+// // remove menu when li is clicked
+// let nav = document.querySelector('#nav');
+// let removeNav = document.querySelector('.navbar');
 
-nav.addEventListener('click', () => {
-    removeNav.classList.remove('active');
-})
+// nav.addEventListener('click', () => {
+//     removeNav.classList.remove('active');
+// })
 
 // remove blur effect when projects is clicked
 let project = document.querySelector('#project');
@@ -49,10 +49,13 @@ project.addEventListener('click', () => {
     menu.classList.toggle('fa-times');
 })
 
+let scroll = document.querySelector('.scroll')
+
 window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
     Blur.classList.remove('active');
+    scroll.classList.remove('scroll')
 }
 
 
