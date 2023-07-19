@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{Dev.Eben}</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="details">   
+                <a href="index.html">
+                    <h2 class="title">Dev.Eben</h4>
+                </a>
+            </span>
+
+            <!-- Digital Clock --> 
+            <span class="clock" >
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">0</span>
+            </span>
+
+            
+            <span class="location">
+                <h2>Lagos,NG.</h2>
+            </span>
+
+            <i class="fa-solid fa-bars fa-beat fa-xl menu-bar" onclick="toggle()"></i>
+        </header>
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="nav">
+            <li><a href="#projects" id="project">Projects</a></li>
+            <li><a href="about.html" class="about">About</a></li>
+            <li><a href="#contact" class="contact">Contact</a></li>
+        </nav>
+        
+        <div class="main" id="blur">
+            
+            <!-- Home Section -->
+            <section class="home section show" id="about">
+                <div class="logo">
+                    <img src="image/logo.svg" alt="logo">
+                </div>
+                <h1>Hi There! I'm Eben.</h1>
+                <p>
+                    I'm a passionate frontend engineer with a knack for design and an intuitive approach to user experience.
+                    With the brushes of HTML, CSS, JavaScript and React, it is common for me to spend the day (and often the night)
+                    painting on the canvas of visual code turning zeroes and ones into immersive, interactive experiences.
+                    <br> <br>
+                    The path of minimalism appeals to me, as it finds beauty in simplicity and order. Also, ability to pay attention to
+                    details has been a strong tool for me in turning design concepts into pixel-perfect, responsive websites and web applications.
+                </p>        
+                
+                <i class="fa-solid fa-computer-mouse fa-fade">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </i>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects section" id="projects">
+                <div class="flex">
+                    <h1>A few of my curations </h1>
+                    <i class="fa-solid fa-folder-open fa-beat"></i>
+                </div>
+                <div class="box-container">
+                    <div class="box box-1 section">
+                        <img src="image/Capture.jpg" alt="">
+                        <div class="content">
+                            <h3>Travel Website</h3>
+                            <a href="tour-webapp.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Godwyneben/Tour-website.git">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box box-2 section">
+                        <img src="image/Capture.jpg" alt="">
+                        <div class="content">
+                            <h3>Travel Website</h3>
+                            <a href="tour-webapp.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Godwyneben/Tour-website.git">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box box-3 section">
+                        <img src="image/Capture.jpg" alt="">
+                        <div class="content">
+                            <h3>Travel Website</h3>
+                            <a href="tour-webapp.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Godwyneben/Tour-website.git">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box box-4 section">
+                        <img src="image/Capture.jpg" alt="">
+                        <div class="content">
+                            <h3>Travel Website</h3>
+                            <a href="tour-webapp.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Godwyneben/Tour-website.git">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box box-5 section">
+                        <img src="image/Capture.jpg" alt="">
+                        <div class="content">
+                            <h3>Travel Website</h3>
+                            <a href="tour-webapp.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Godwyneben/Tour-website.git">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box box-6 section">
+                        <img src="image/Capture.jpg" alt="">
+                        <div class="content">
+                            <h3>Travel Website</h3>
+                            <a href="tour-webapp.vercel.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Godwyneben/Tour-website.git">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+
+            <section class="footer">
+                <a href="https://github.com/Godwyneben">
+                    <div class="flex">
+                        <h3>See more projects</h3>
+                        <i class="fa-solid fa-arrow-right fa-beat"></i>
+                    </div>
+                </a>
+            </section>
+        </div>  
+    
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
