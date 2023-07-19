@@ -48,7 +48,6 @@ body {
     }
 }
 
-
 header{
     position: fixed;
     width: 100%;
@@ -185,21 +184,26 @@ section{
 }
 
 .home h1{
-    padding: 0.3rem 0;
+    padding: -0.5rem 0;
     font-size: 3rem;
     animation: 2.5s slideup;
 }
 
 .home p{
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     font-size: 22px;
     line-height: 2rem;
 }
 
-.home > i{
+.flex{
+    padding: -2rem 0;
+}
+
+.flex a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.flex a:hover{
     font-size: 1.5rem;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    padding: 2.3rem 0;
 }
