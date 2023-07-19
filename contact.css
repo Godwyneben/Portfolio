@@ -121,7 +121,7 @@ header .clock {
     }
 }
 
-.navbar li .home::before{
+.navbar li a::before{
     content:" Home";
     position: absolute;
     color: #0B0A0A;
@@ -131,7 +131,7 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar li a::before{
+.navbar li .projects::before{
     content:" Projects";
     position: absolute;
     color: #0B0A0A;
@@ -141,8 +141,8 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar .contact::before{
-    content:" Contact";
+.navbar .about::before{
+    content:" About";
     position:absolute;
     color: #0B0A0A;
     left: 0;
@@ -208,10 +208,10 @@ section{
 
 
 .contact .row form{
-    flex: 1 1 50rem;
+    /* flex: 1 1 50rem; */
     padding: 2rem;
-    box-shadow: 0 1rem 2rem rgb(0, 0, 0, .1);
-    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, .85);
+    border-radius: 5rem;
 }
 
 .contact .row form .inputBox{
@@ -226,27 +226,39 @@ section{
     padding: 1rem;
     font-size: 1.7rem;
     color: #333;
-    background: #fFF;
+    background: #0B0A0A;
     text-transform: none;
-    border: 1px solid skyblue;
+    border: 0.5px solid rgb(31, 30, 30);
 }
 
 .contact .row form textarea{
     height: 15rem;
     resize: none;
-    width: 95%;
+    width: 96%;
 }
 
 .contact .row form .btn{
     margin-left: 1rem;
     padding: .5rem;
+    color: #777;
     background: none;
-    border: 1px solid skyblue;
+    border: 1px solid rgb(31, 30, 30);
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .contact .row form .btn:hover{
-    background: skyblue;
-    border-radius: 6px;
+    color: #fff;
+    background: rgb(0, 0, 0);
+}
+
+.contact .socials{
+    display: flex;
+}
+
+.socials a{
+    animation: 2s slideup;
+    padding: 0 5.5rem;
+    /* margin: 0 -5rem; */
 }
 
