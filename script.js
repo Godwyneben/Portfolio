@@ -39,12 +39,21 @@ nav.addEventListener('click', () => {
     removeNav.classList.remove('active');
 })
 
+// remove blur effect when projects is clicked
 let project = document.querySelector('#project');
 let Blur = document.querySelector('#blur');
+let Menu = document.querySelector('.menu-bar');
 
 project.addEventListener('click', () => {
     Blur.classList.remove('active');
+    menu.classList.toggle('fa-times');
 })
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    Blur.classList.remove('active');
+}
 
 
 const sections = document.querySelectorAll('.section');
