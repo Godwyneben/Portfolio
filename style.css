@@ -322,25 +322,6 @@ section {
     font-size: 1.7rem;
 }
 
-.about {
-    padding: -5rem 0;
-}
-
-.about h1 {
-    padding: 0.3rem 0;
-    font-size: 2.5rem;
-}
-
-.about p {
-    padding: -1rem 0;
-    font-size: 22px;
-    line-height: 2rem;
-}
-
-.about i {
-    font-size: 22px;
-}
-
 .footer .flex {
     font-size: 1rem;
     gap: 0.6rem;
@@ -397,14 +378,14 @@ section {
     }
 
     .navbar {
-        margin-top: 25rem;
+        margin-top: 21rem;
         padding: -1rem 0;
         border-radius: 45px 45px 0 0;
     }
 
     .navbar li a {
         font-size: 55px;
-        height: 16vh;
+        height: 17vh;
     }
 
     section {
@@ -436,21 +417,36 @@ section {
         padding-top: -2rem;
     }
 
-    .projects .flex > i, h1 {
+    .projects .flex i, h1 {
         font-size: 2rem;
     }
 
     .projects .box-container .box {
+        flex: 1 1 30rem;
         height: 19rem;
     }
-    
     
     .projects .box-container .box img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-    }    
+    } 
     
+    .projects .box-container .box .content h3 {
+        padding-bottom: 2rem;
+    }
     
+    .projects .box-container .box .content a {
+        font-size: 1.5rem;
+    }
+    
+    .projects .box-container .box .content a:hover {
+        font-size: 1.8rem;
+    }
+    
+    .footer .flex {
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
 
 }
