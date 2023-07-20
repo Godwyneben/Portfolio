@@ -252,8 +252,7 @@ section {
     padding-bottom: 2rem;
 }
 
-.projects .flex > i,
-h1 {
+.projects .flex > i, h1 {
     font-size: 1.5rem;
 }
 
@@ -357,11 +356,11 @@ h1 {
 /* Media Query for small screens  */
 @media (max-width:650px) {
     html {
-        font-size: 45%;
+        font-size: 46%;
     }
 
     body {
-        margin: 0 -2.5rem;
+        margin: 0 -0.5rem;
         height: 100vh;
 
     }
@@ -371,10 +370,10 @@ h1 {
     }
 
     header {
-        gap: 5.5rem;
+        gap: 6.7rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
-        padding-left: 4.5rem;
+        padding-left: 2.3rem;
     }
 
     header .clock {
@@ -394,7 +393,7 @@ h1 {
     }
 
     .menu-bar {
-        left: 83%;
+        left: 88%;
     }
 
     .navbar {
@@ -409,7 +408,7 @@ h1 {
     }
 
     section {
-        padding: 20px 6rem;
+        padding: 20px 3rem;
         display: flex;
         flex-wrap: wrap;
         text-align: justify;
@@ -423,8 +422,9 @@ h1 {
     }
     
     .home p {
+        font-weight: 700;
         padding-top: 4rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         word-spacing: -3px;
     }
     
@@ -435,6 +435,21 @@ h1 {
     .projects {
         padding-top: -2rem;
     }
+
+    .projects .flex > i, h1 {
+        font-size: 2rem;
+    }
+
+    .projects .box-container .box {
+        height: 19rem;
+    }
+    
+    
+    .projects .box-container .box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }    
     
     
 
