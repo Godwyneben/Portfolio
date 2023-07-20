@@ -332,10 +332,12 @@ section {
     text-decoration: none;
 }
 
+
+
 /* Media Queries */
 
 /* Media Query for small screens  */
-@media (max-width:650px) {
+@media (max-width:600px) {
     html {
         font-size: 46%;
     }
@@ -378,7 +380,7 @@ section {
     }
 
     .navbar {
-        margin-top: 21rem;
+        margin-top: 22rem;
         padding: -1rem 0;
         border-radius: 45px 45px 0 0;
     }
@@ -403,7 +405,6 @@ section {
     }
     
     .home p {
-        font-weight: 700;
         padding-top: 4rem;
         font-size: 1.5rem;
         word-spacing: -3px;
@@ -449,8 +450,136 @@ section {
         gap: 1.5rem;
         margin-bottom: 2rem;
     }
-
 }
+
+
+
+
+/* Media Query for medium screens  */
+@media (min-width: 768px) {
+    
+    body {
+        margin: 0 -0.5rem;
+    }
+
+    .logo img {
+        max-width: 55px;
+        position: absolute;
+        right: 4.5rem;
+    }
+
+    header {
+        gap: 10rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 4.4rem;
+    }
+
+    header .clock {
+        font-size: 22px;
+    }
+
+    header .details{
+        font-size: 16px;
+    }
+
+    header .location {
+        display: none;
+    }
+
+    header .fa-bars{
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        left: 85.5%;
+    }
+
+    .navbar {
+        margin-top: 9.5rem;
+    }
+
+    .navbar li a {
+        font-size: 95px;
+        height: 16vh;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+        padding-top: 3rem;
+    }
+    
+    .home p {
+        padding-top: 3rem;
+        font-size: 1.5rem;
+        word-spacing: -3px;
+    }
+    
+    .home > i{
+        display: none;
+    }
+
+    .projects {
+        position: relative;
+        top: -3rem;
+    }
+
+    .projects .flex i, h1 {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .projects .box-container .box {
+        flex: 1 1 30rem;
+        height: 19rem;
+    }
+    
+    .projects .box-container .box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    } 
+    
+    .projects .box-container .box .content h3 {
+        padding-bottom: 2rem;
+    }
+    
+    .projects .box-container .box .content a {
+        font-size: 2rem;
+    }
+    
+    .projects .box-container .box .content a:hover {
+        font-size: 2.5rem;
+    }
+    
+    .footer .flex {
+        font-size: 1.5rem;
+        gap: 1.5rem;
+        margin-top: -5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Screens with defects */
 @media (width: 375px){
@@ -464,7 +593,7 @@ section {
     }
 }
 
-@media (width: 425px){git add .
+@media (width: 425px){
     header {
         gap: 13rem;
         padding-left: 2.5rem;
