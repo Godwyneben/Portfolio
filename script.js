@@ -31,14 +31,6 @@ function toggle(){
     navbar.classList.toggle('active');
 }
 
-// // remove menu when li is clicked
-// let nav = document.querySelector('#nav');
-// let removeNav = document.querySelector('.navbar');
-
-// nav.addEventListener('click', () => {
-//     removeNav.classList.remove('active');
-// })
-
 // remove blur effect when projects is clicked
 let project = document.querySelector('#project');
 let Blur = document.querySelector('#blur');
@@ -64,7 +56,7 @@ window.addEventListener('scroll', checkSections);
 checkSections();
 // transition on scroll 
 function checkSections() {
-    const triggerBottom = window.innerHeight/5 * 2;
+    const triggerBottom = window.innerHeight/5 * 4;
 
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
