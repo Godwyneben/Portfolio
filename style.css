@@ -410,7 +410,8 @@ section {
     }
 
     .projects {
-        padding-top: -2rem;
+        position: relative;
+        top: 6rem;
     }
 
     .projects .flex i, h1 {
@@ -506,7 +507,7 @@ section {
     
     .home p {
         padding-top: 3rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
         word-spacing: -3px;
     }
     
