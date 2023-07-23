@@ -426,7 +426,6 @@ section {
     .projects .box-container .box img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
     } 
     
     .projects .box-container .box .content h3 {
@@ -447,7 +446,6 @@ section {
         margin-bottom: 2rem;
     }
 }
-
 
 
 
@@ -498,6 +496,10 @@ section {
     .navbar li a {
         font-size: 95px;
         height: 16vh;
+    }
+
+    .navbar.active {
+        top: -2rem;
     }
 
     .home h1 {
