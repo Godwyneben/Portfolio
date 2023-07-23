@@ -411,7 +411,7 @@ section {
 
     .projects {
         position: relative;
-        top: 6rem;
+        top: -3rem;
     }
 
     .projects .flex i, h1 {
