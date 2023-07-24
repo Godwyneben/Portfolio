@@ -69,7 +69,13 @@ header .details a {
     text-decoration: none;
 }
 
-header .clock {
+header .clock, .date {
+    font-weight: 600;
+    font-size: 24px;
+    background-color: none;
+}
+
+header .clock, .date {
     font-weight: 600;
     font-size: 24px;
     background-color: none;
