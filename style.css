@@ -60,10 +60,8 @@ header {
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    gap: 18rem;
     padding-top: 0.85rem;
     padding-bottom: 0.85rem;
-    padding-left: 7rem;
 }
 
 header .details a {
@@ -163,7 +161,7 @@ header .clock {
     text-align: center;
     justify-content: center;
     position: fixed;
-    top: 3.2rem;
+    top: 5rem;
     left: 0;
     right: 0;
     width: 100%;
