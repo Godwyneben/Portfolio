@@ -60,7 +60,8 @@ header {
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    padding-top: 0.85rem;
+    justify-content: space-between;
+    padding-top: 0.6rem;
     padding-bottom: 0.85rem;
 }
 
@@ -69,22 +70,16 @@ header .details a {
     text-decoration: none;
 }
 
-header .clock, .date {
+header .clock{
     font-weight: 600;
-    font-size: 24px;
-    background-color: none;
-}
-
-header .clock, .date {
-    font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     background-color: none;
 }
 
 .menu-bar {
     position: absolute;
     top: 50%;
-    left: 89%;
+    right: 2%;
     cursor: pointer;
     display: block;
 }
