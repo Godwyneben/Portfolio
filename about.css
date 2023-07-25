@@ -58,7 +58,7 @@ header{
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding-top: 0.6rem;
     padding-bottom: 0.85rem;
 }
@@ -219,7 +219,7 @@ section{
 /* Media Queries  */
 
 /* media query for small screens */
-@media (max-width: 600px) {
+@media (max-width: 580px) {
     html {
         font-size: 46%;
     }
@@ -233,8 +233,6 @@ section{
     }
 
     header {
-        /* justify-content: unset; */
-        gap: 7rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         padding-left: 3rem;
@@ -277,9 +275,13 @@ section{
     }
     
     .home p {
-        padding-top: 4rem;
-        font-size: 1.5rem;
-        word-spacing: -4.5px;
+        /* padding-top: 4rem; */
+        /* font-size: 1.5rem; */
+        /* word-spacing: -4.5px; */
+        font-size: 2rem;
+        line-height: 3rem;
+        
+        
     }
 
     .flex a{
@@ -290,7 +292,7 @@ section{
 
 
 /* Media Query for medium screens  */
-@media (min-width: 768px) {
+@media (min-width: 7px) {
     .logo img {
         max-width: 55px;
         position: absolute;
@@ -298,11 +300,7 @@ section{
     }
 
     header {
-        justify-content: unset;
-        gap: 6rem;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-left: 3rem;
+        padding: 0.8rem 3rem;
     }
 
     header .clock {
