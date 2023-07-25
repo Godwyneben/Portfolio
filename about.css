@@ -87,7 +87,6 @@ header .clock {
 .navbar {
     list-style-type: none;
     text-align: center;
-    margin-top: 2.5rem;
     padding: 3rem 0;
     display: none;
     border-radius: 65px 65px 0 0;
@@ -162,7 +161,6 @@ header .clock {
     text-align: center;
     justify-content: center;
     position: fixed;
-    top: 3.2rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -216,4 +214,66 @@ section{
 
 .flex a:hover{
     font-size: 1.5rem;
+}
+
+
+/* Media Queries  */
+
+/* media query for small screens */
+
+@media (max-width:600px) {
+    html {
+        font-size: 46%;
+    }
+
+    body {
+        margin: 0 -0.5rem;
+        height: 100vh;
+    }
+
+    .logo img {
+        max-width: 25px;
+    }
+
+    header {
+        justify-content: unset;
+        gap: 8.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 4.5rem;
+    }
+
+    header .clock {
+        font-size: 14px;
+    }
+
+    header .details{
+        font-size: 9px;
+    }
+
+    
+    header .location {
+        display: none;
+    }
+
+    header .fa-bars{
+        font-size: 15px;
+    }
+
+    .menu-bar {
+        left: 85%;
+    }
+
+    .navbar {
+        position: relative;
+        bottom: 5rem;
+        border-radius: 45px 45px 0 0;
+    }
+
+    .navbar li a {
+        font-size: 55px;
+        height: 14vh;
+    } 
+
+
 }
