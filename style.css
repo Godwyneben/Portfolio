@@ -350,7 +350,7 @@ section {
 
     header {
         justify-content: unset;
-        gap: 7rem;
+        gap: 7.5rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         padding-left: 2.3rem;
@@ -494,7 +494,7 @@ section {
 
     .navbar li a {
         font-size: 95px;
-        height: 16vh;
+        height: 18vh;
     }
 
     .home h1 {
