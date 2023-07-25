@@ -558,7 +558,8 @@ section {
 /* Media Query for large screens  */
 @media (min-width: 1024px) {
     header {
-        gap: 10rem;
+        display: flex;
+        justify-content: space-between;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-left: 4.6rem;
