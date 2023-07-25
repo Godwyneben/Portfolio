@@ -60,7 +60,7 @@ header {
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 0.6rem;
     padding-bottom: 0.85rem;
 }
@@ -343,7 +343,6 @@ section {
     body {
         margin: 0 -0.5rem;
         height: 100vh;
-
     }
 
     .logo img {
@@ -351,7 +350,7 @@ section {
     }
 
     header {
-        gap: 7rem;
+        gap: 6rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         padding-left: 2.3rem;
@@ -374,11 +373,11 @@ section {
     }
 
     .menu-bar {
-        left: 88%;
+        left: 82%;
     }
 
     .navbar {
-        margin-top: 22rem;
+        margin-top: 19.5rem;
         padding: -1rem 0;
         border-radius: 45px 45px 0 0;
     }
@@ -399,7 +398,7 @@ section {
     
     .home p {
         padding-top: 4rem;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         word-spacing: -3px;
     }
     
@@ -461,7 +460,7 @@ section {
     }
 
     header {
-        gap: 10rem;
+        gap: 8.5rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-left: 4.4rem;
@@ -484,11 +483,11 @@ section {
     }
 
     .menu-bar {
-        left: 85.5%;
+        left: 74%;
     }
 
     .navbar {
-        margin-top: 9.5rem;
+        margin-top: 9rem;
     }
 
     .navbar li a {
@@ -615,21 +614,21 @@ section {
 @media (width: 375px){
     
     header {
-        gap: 10rem;
+        gap: 8.5rem;
     }
 
     .menu-bar {
-        left: 90%;
+        left: 82%;
     }
 }
 
 @media (width: 425px){
     header {
-        gap: 13rem;
+        gap: 11rem;
         padding-left: 2.5rem;
     }
 
     .menu-bar {
-        left: 91%;
+        left: 83.5%;
     }
 }
