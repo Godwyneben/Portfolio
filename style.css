@@ -60,7 +60,7 @@ header {
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding-top: 0.6rem;
     padding-bottom: 0.85rem;
 }
@@ -87,7 +87,7 @@ header .clock{
 .navbar {
     list-style-type: none;
     text-align: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     padding: 3rem 0;
     display: none;
     border-radius: 65px 65px 0 0;
@@ -162,7 +162,7 @@ header .clock{
     text-align: center;
     justify-content: center;
     position: fixed;
-    top: 5rem;
+    top: 6rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -385,6 +385,21 @@ section {
     .navbar li a {
         font-size: 55px;
         height: 16vh;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: ;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #EDEDED;
+        animation: 2s slideup;
+        z-index: 1000;
     }
 
     section {
