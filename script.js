@@ -3,13 +3,18 @@
 // Digital clock 
 function updateClock() {
     var now = new Date();
-    var hours = now.getHours().toString().padStart(2, '0');
-    var minutes = now.getMinutes().toString().padStart(2, '0');
-    var seconds = now.getSeconds().toString().padStart(2, '0');
+        hours = now.getHours().toString().padStart(1, '0');
+        minutes = now.getMinutes().toString().padStart(2, '0');
+        seconds = now.getSeconds().toString().padStart(2, '0');
+        period = "AM";
 
-    document.getElementById('hours').textContent = hours;
-    document.getElementById('minutes').textContent = minutes;
-    document.getElementById('seconds').textContent = seconds;
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+
+        if (hours > 12) {
+            period = "PM";
+        }
 }
 
 setInterval(updateClock, 1000);
@@ -18,13 +23,13 @@ setInterval(updateClock, 1000);
 let menu = document.querySelector('.menu-bar');
 let navbar = document.querySelector('.navbar');
 
-menu.addEventListener('click', () =>{
+menu.addEventListener('click', () => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 })
- 
+
 // blur effect when menu is clicked 
-function toggle(){
+function toggle() {
     let blur = document.getElementById('blur');
     blur.classList.toggle('active');
     let navbar = document.getElementsByClassName('navbar');
@@ -41,7 +46,7 @@ project.addEventListener('click', () => {
     menu.classList.toggle('fa-times');
 })
 
-window.onscroll = () =>{
+window.onscroll = () => {
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
     Blur.classList.remove('active');
@@ -52,16 +57,16 @@ window.addEventListener('scroll', checkSections);
 checkSections();
 // transition on scroll 
 function checkSections() {
-    const triggerBottom = window.innerHeight/5 * 4;
+    const triggerBottom = window.innerHeight / 5 * 4;
 
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
 
-        if(sectionTop < triggerBottom) {
+        if (sectionTop < triggerBottom) {
             section.classList.add('show');
         } else {
             section.classList.remove('show');
         }
     });
-    
+
 }
