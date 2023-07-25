@@ -104,7 +104,7 @@ header .clock {
     font-size: 85px;
     text-decoration: none;
     height: 18vh;
-    animation: 5s slideup; 
+    animation: 2.5s slideup; 
 }
 
 @keyframes slideup {
@@ -272,5 +272,156 @@ section{
         height: 14vh;
     } 
 
+    .home h1 {
+        font-size: 3rem;
+    }
+    
+    .home p {
+        padding-top: 4rem;
+        font-size: 1.5rem;
+        word-spacing: -4.5px;
+    }
 
+    .flex a{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+/* Media Query for medium screens  */
+@media (min-width: 768px) {
+    .logo img {
+        max-width: 55px;
+        position: absolute;
+        right: 1.5rem;
+    }
+
+    header {
+        justify-content: unset;
+        gap: 11rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 3rem;
+    }
+
+    header .clock {
+        font-size: 25px;
+    }
+
+    header .details{
+        font-size: 16px;
+    }
+
+    header .location {
+        display: none;
+    }
+
+    header .fa-bars{
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        left: 90%;
+    }
+
+    .navbar {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .navbar li a {
+        font-size: 95px;
+        height: 16vh;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+        padding-top: 3rem;
+    }
+    
+    .home p {
+        padding-top: 3rem;
+        font-size: 1.3rem;
+        word-spacing: -2px;
+    }
+
+    .flex a{
+        font-size: 1.6rem;
+    }
+    
+}
+
+
+/* Media Query for large screens  */
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 4.6rem;
+    }
+
+    header .location {
+        display: block;
+    }
+
+    .menu-bar {
+        left: 89%;
+    }
+
+    .navbar {
+        margin-top: 12rem;
+    }
+
+    .navbar li a {
+        font-size: 95px;
+        height: 16vh;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+        padding-top: 3rem;
+    }
+    
+    .home p {
+        padding-top: 3rem;
+        font-size: 1.3rem;
+        word-spacing: -3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Screens with defects */
+@media (width: 375px){
+    
+    header {
+        gap: 10.5rem;
+    }
+
+    .menu-bar {
+        left: 89%;
+    }
+}
+
+@media (width: 425px){
+    header {
+        gap: 13rem;
+        padding-left: 3rem;
+    }
+
+    .menu-bar {
+        left: 90%;
+    }
 }

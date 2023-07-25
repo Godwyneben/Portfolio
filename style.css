@@ -506,10 +506,6 @@ section {
         font-size: 1rem;
         word-spacing: -3px;
     }
-    
-    .home > i{
-        display: none;
-    }
 
     .projects {
         position: relative;
@@ -591,13 +587,7 @@ section {
         font-size: 1.3rem;
         word-spacing: -3px;
     }
-    
-    .home > i{
-        display: block;
-    }
 }
-
-
 
 
 
