@@ -55,14 +55,13 @@ header{
     left: 0;
     right: 0; 
     border: 0.5px solid #a3a3a5;
-    z-index: 1000;
+    z-index: 9999;
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    gap: 15rem;
-    padding-top: 0.85rem;
+    justify-content: space-between;
+    padding-top: 0.6rem;
     padding-bottom: 0.85rem;
-    padding-left: 7rem;
 }
 
 header .details a{
@@ -163,6 +162,7 @@ header .clock {
     position: fixed;
     left: 0;
     right: 0;
+    padding-bottom: 3rem;
     width: 100%;
     background: #EDEDED;
     animation: 2s slideup;
@@ -178,7 +178,7 @@ header .clock {
 }
 
 section{
-    padding: 80px 5rem;
+    padding: 80px 1rem;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
@@ -220,14 +220,12 @@ section{
 /* Media Queries  */
 
 /* media query for small screens */
-
 @media (max-width:600px) {
     html {
         font-size: 46%;
     }
 
     body {
-        margin: 0 -0.5rem;
         height: 100vh;
     }
 
@@ -237,10 +235,10 @@ section{
 
     header {
         justify-content: unset;
-        gap: 8.5rem;
+        gap: 7rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        padding-left: 4.5rem;
+        padding-left: 3rem;
     }
 
     header .clock {
@@ -251,7 +249,6 @@ section{
         font-size: 9px;
     }
 
-    
     header .location {
         display: none;
     }
@@ -261,7 +258,7 @@ section{
     }
 
     .menu-bar {
-        left: 85%;
+        left: 87%;
     }
 
     .navbar {

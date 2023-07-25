@@ -6,15 +6,11 @@ function updateClock() {
         hours = now.getHours().toString().padStart(1, '0');
         minutes = now.getMinutes().toString().padStart(2, '0');
         seconds = now.getSeconds().toString().padStart(2, '0');
-        period = "AM";
 
         document.getElementById('hours').textContent = hours;
         document.getElementById('minutes').textContent = minutes;
         document.getElementById('seconds').textContent = seconds;
 
-        if (hours > 12) {
-            period = "PM";
-        }
 }
 
 setInterval(updateClock, 1000);
