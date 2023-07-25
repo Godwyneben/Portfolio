@@ -60,6 +60,7 @@ header {
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-top: 0.6rem;
     padding-bottom: 0.85rem;
 }
@@ -348,7 +349,8 @@ section {
     }
 
     header {
-        gap: 6rem;
+        justify-content: unset;
+        gap: 7rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         padding-left: 2.3rem;
@@ -458,6 +460,7 @@ section {
     }
 
     header {
+        justify-content: unset;
         gap: 8.5rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
