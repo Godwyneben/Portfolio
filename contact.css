@@ -286,13 +286,12 @@ section {
     }
 
     .logo img {
-        max-width: 30px;
-        right: 75%;
+        max-width: 20px;
+        right: 38%;
     }
 
     header {
-        display: none;
-        /* padding: 0.5rem 1.65rem; */
+        padding: 0.5rem 2.65rem;
     }
 
     header .clock {
@@ -312,7 +311,7 @@ section {
     }
 
     .menu-bar {
-        left: 90%;
+        left: 59%;
     }
 
     .navbar {
@@ -330,20 +329,54 @@ section {
         bottom: 1rem;
     }
 
-    .contact h1{
-        font-size: 2rem;
-        padding-right: 1rem;
+    .contact h1 {
+        font-size: 1rem;
+        /* padding-right: 2rem; */
     }
 
-
-    hr{
-        width: 6%;
+    .contact .row form {
+        border-radius: 4rem;
+        padding-bottom: 1rem;
     }
 
+    .contact .row form .inputBox input,
+    .contact .row form textarea {
+        margin: 0.4rem 0;
+        padding: 0.4rem;
+        font-size: 0.7rem;
+        color: aliceblue;
+    }
+
+    .contact .row form textarea {
+        height: 10rem;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .contact .row form .btn {
+        padding: .5rem;
+        font-size: 0.7rem;
+        color: #777;
+        background: none;
+        border: 1px solid rgb(31, 30, 30);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .contact .row form .btn:hover {
+        color: #fff;
+        background: rgb(0, 0, 0);
+    }
+
+    .contact .socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .socials a {
-        font-size: 1.2rem;
-        margin: 0.6rem .2rem;
+        font-size: 0.5rem;
+        margin: 0.2rem 1rem;
     }
 
 }
