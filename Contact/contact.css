@@ -1,16 +1,17 @@
 /* CSS Styles */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
 }
 
-*::selection{
+*::selection {
     color: #88ceeb;
 }
 
-html{
+html {
+    scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
@@ -21,7 +22,6 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    height: 105vh;
     background-color: #0B0A0A;
     overflow-x: hidden;
 }
@@ -31,7 +31,7 @@ body {
     cursor: pointer;
 }
 
-.logo img{
+.logo img {
     max-width: 40px;
     position: absolute;
     top: 1.5rem;
@@ -39,33 +39,32 @@ body {
     animation: rotate infinite forwards 3.5s;
 }
 
-@keyframes rotate  {
+@keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    right: 0; 
-    border: 0.5px solid #a3a3a5;
-    z-index: 1000;
+    right: 0;
+    z-index: 9999;
     background-color: #0B0A0A;
     display: flex;
     align-items: center;
-    gap: 15rem;
-    padding-top: 0.85rem;
+    justify-content: space-between;
+    padding-top: 0.6rem;
     padding-bottom: 0.85rem;
-    padding-left: 7rem;
 }
 
-header .details a{
+header .details a {
     cursor: pointer;
     text-decoration: none;
 }
@@ -79,50 +78,49 @@ header .clock {
 .menu-bar {
     position: absolute;
     top: 50%;
-    left: 89%;
+    left: 90%;
     cursor: pointer;
-    display: block; 
+    display: block;
 }
-    
+
 .navbar {
     list-style-type: none;
     text-align: center;
-    margin-top: 2.5rem;
     padding: 3rem 0;
     display: none;
     border-radius: 65px 65px 0 0;
 }
 
-.navbar li{
+.navbar li {
     width: fit-content;
     position: relative;
     left: 50%;
     transform: translate(-50%, 50%);
 }
 
-.navbar li a{
+.navbar li a {
     display: block;
     color: #C6C6C6;
     font-size: 85px;
     text-decoration: none;
     height: 18vh;
-    animation: 5s slideup; 
+    animation: 2.5s slideup;
 }
 
 @keyframes slideup {
     from {
-      margin-top: 100%;
-      width: 100%;
+        margin-top: 100%;
+        width: 100%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
 }
 
-.navbar li a::before{
-    content:" Home";
+.navbar li .home::before {
+    content: " Home";
     position: absolute;
     color: #0B0A0A;
     left: 0;
@@ -131,8 +129,8 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar li .projects::before{
-    content:" Projects";
+.navbar li a::before {
+    content: " Projects";
     position: absolute;
     color: #0B0A0A;
     left: 0;
@@ -141,9 +139,9 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar .about::before{
-    content:" About";
-    position:absolute;
+.navbar .contact::before {
+    content: " Contact";
+    position: absolute;
     color: #0B0A0A;
     left: 0;
     width: 0%;
@@ -151,36 +149,36 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     height: 3.25rem;
     width: 100%;
 }
 
-.navbar.active{
+.navbar.active {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     position: fixed;
-    top: 3.2rem;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     background: #EDEDED;
     animation: 2s slideup;
     z-index: 1000;
 }
 
-.main{
+.main {
     padding: 1rem 0;
 }
 
-.main#blur.active{
+.main#blur.active {
     filter: blur(5px);
 }
 
-section{
-    padding: 80px 5rem;
+section {
+    padding: 80px 1rem;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
