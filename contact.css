@@ -1,5 +1,5 @@
 /* CSS Styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -191,13 +191,13 @@ section {
     font-size: 3rem;
 }
 
-.contact h1{
+.contact h1 {
     padding: -0.5rem 0;
     font-size: 3rem;
     animation: 2.5s slideup;
 }
 
-.contact .row{
+.contact .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -205,20 +205,21 @@ section {
 }
 
 
-.contact .row form{
+.contact .row form {
     /* flex: 1 1 50rem; */
     padding: 2rem;
     box-shadow: 0 1rem 2rem rgb(0, 0, 0, .85);
     border-radius: 5rem;
 }
 
-.contact .row form .inputBox{
+.contact .row form .inputBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contact .row form .inputBox input, .contact .row form textarea{
+.contact .row form .inputBox input,
+.contact .row form textarea {
     width: 100%;
     margin: 1rem;
     padding: 1rem;
@@ -229,13 +230,13 @@ section {
     border: 0.5px solid rgb(31, 30, 30);
 }
 
-.contact .row form textarea{
+.contact .row form textarea {
     height: 15rem;
     resize: none;
     width: 96%;
 }
 
-.contact .row form .btn{
+.contact .row form .btn {
     margin-left: 1rem;
     padding: .5rem;
     color: #777;
@@ -245,29 +246,117 @@ section {
     cursor: pointer;
 }
 
-.contact .row form .btn:hover{
+.contact .row form .btn:hover {
     color: #fff;
     background: rgb(0, 0, 0);
 }
 
-.contact .socials{
+.contact .socials {
     display: flex;
 }
 
-.socials a{
+.socials a {
     font-size: 1.5rem;
     animation: 2s slideup;
     margin: 1rem 7rem;
 }
 
-.socials .fa-github:hover{
+.socials .fa-github:hover {
     color: rgb(8, 136, 72);
 }
 
-.socials .fa-twitter:hover{
-    color: rgb(29,161,242);
+.socials .fa-twitter:hover {
+    color: rgb(29, 161, 242);
 }
 
-.socials .fa-instagram:hover{
-    color: rgb(217,44,110);
+.socials .fa-instagram:hover {
+    color: rgb(217, 44, 110);
+}
+
+
+
+/* Media Queries  */
+
+/* media query for small screens */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0 0.5rem;
+    }
+
+    .logo img {
+        max-width: 30px;
+    }
+
+    header {
+        padding: 0.5rem 1.65rem;
+    }
+
+    header .clock {
+        display: none;
+    }
+
+    header .details {
+        font-size: 12px;
+    }
+
+    header .location {
+        display: none;
+    }
+
+    header .fa-bars {
+        font-size: 18px;
+    }
+
+    .menu-bar {
+        left: 90%;
+    }
+
+    .navbar {
+        position: relative;
+        bottom: 0;
+        border-radius: 45px 45px 0 0;
+    }
+
+    .navbar li a {
+        font-size: 55px;
+        height: 14vh;
+    }
+
+    .navbar.active {
+        bottom: 1rem;
+    }
+
+    .contact .row form {
+        padding: 1rem;
+    }
+
+    .contact .row form textarea {
+        width: 90%;
+    }
+
+    .contact .row form .btn {
+        position: relative;
+        bottom: 2rem;
+        left: 45%;
+        transform: translate(-45%, 60%);
+    }
+
+    .socials a {
+        font-size: 1.2rem;
+        /* animation: 2s slideup; */
+        margin: 1.2rem 1rem;
+    }
+
+    .socials .fa-github:hover {
+        color: rgb(8, 136, 72);
+    }
+
+    .socials .fa-twitter:hover {
+        color: rgb(29, 161, 242);
+    }
+
+    .socials .fa-instagram:hover {
+        color: rgb(217, 44, 110);
+    }
+
 }
