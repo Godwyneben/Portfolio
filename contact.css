@@ -34,8 +34,8 @@ body {
 .logo img {
     max-width: 40px;
     position: absolute;
-    top: 1.5rem;
-    right: 9%;
+    top: 2rem;
+    right: 5%;
     animation: rotate infinite forwards 3.5s;
 }
 
@@ -206,7 +206,6 @@ section {
 
 
 .contact .row form {
-    /* flex: 1 1 50rem; */
     padding: 2rem;
     box-shadow: 0 1rem 2rem rgb(0, 0, 0, .85);
     border-radius: 5rem;
@@ -237,7 +236,10 @@ section {
 }
 
 .contact .row form .btn {
-    margin-left: 1rem;
+    position: relative;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
     padding: .5rem;
     color: #777;
     background: none;
@@ -285,10 +287,12 @@ section {
 
     .logo img {
         max-width: 30px;
+        right: 75%;
     }
 
     header {
-        padding: 0.5rem 1.65rem;
+        display: none;
+        /* padding: 0.5rem 1.65rem; */
     }
 
     header .clock {
@@ -326,37 +330,20 @@ section {
         bottom: 1rem;
     }
 
-    .contact .row form {
-        padding: 1rem;
+    .contact h1{
+        font-size: 2rem;
+        padding-right: 1rem;
     }
 
-    .contact .row form textarea {
-        width: 90%;
+
+    hr{
+        width: 6%;
     }
 
-    .contact .row form .btn {
-        position: relative;
-        bottom: 2rem;
-        left: 45%;
-        transform: translate(-45%, 60%);
-    }
 
     .socials a {
         font-size: 1.2rem;
-        /* animation: 2s slideup; */
-        margin: 1.2rem 1rem;
-    }
-
-    .socials .fa-github:hover {
-        color: rgb(8, 136, 72);
-    }
-
-    .socials .fa-twitter:hover {
-        color: rgb(29, 161, 242);
-    }
-
-    .socials .fa-instagram:hover {
-        color: rgb(217, 44, 110);
+        margin: 0.6rem .2rem;
     }
 
 }
