@@ -1,16 +1,18 @@
 /* CSS Styles */
-*,:after,:before  {
+*,
+:after,
+:before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
 }
 
-*::selection{
+*::selection {
     color: #88ceeb;
 }
 
-html{
+html {
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
@@ -31,7 +33,7 @@ body {
     cursor: pointer;
 }
 
-.logo img{
+.logo img {
     max-width: 40px;
     position: absolute;
     top: 1.5rem;
@@ -39,21 +41,22 @@ body {
     animation: rotate infinite forwards 3.5s;
 }
 
-@keyframes rotate  {
+@keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    right: 0; 
+    right: 0;
     z-index: 9999;
     background-color: #0B0A0A;
     display: flex;
@@ -61,12 +64,13 @@ header{
     justify-content: space-between;
     padding-top: 0.6rem;
     padding-bottom: 0.85rem;
+    /* padding-left: 1rem; */
 }
 
-header .details a{
+header .details a {
     cursor: pointer;
     text-decoration: none;
-    padding-left: -2rem;
+    /* padding-left: -2rem; */
 }
 
 header .clock {
@@ -78,11 +82,11 @@ header .clock {
 .menu-bar {
     position: absolute;
     top: 50%;
-    left: 85%;
+    left: 90%;
     cursor: pointer;
-    display: block; 
+    display: block;
 }
-    
+
 .navbar {
     list-style-type: none;
     text-align: center;
@@ -91,36 +95,36 @@ header .clock {
     border-radius: 65px 65px 0 0;
 }
 
-.navbar li{
+.navbar li {
     width: fit-content;
     position: relative;
     left: 50%;
     transform: translate(-50%, 50%);
 }
 
-.navbar li a{
+.navbar li a {
     display: block;
     color: #C6C6C6;
     font-size: 85px;
     text-decoration: none;
     height: 18vh;
-    animation: 2.5s slideup; 
+    animation: 2.5s slideup;
 }
 
 @keyframes slideup {
     from {
-      margin-top: 100%;
-      width: 100%;
+        margin-top: 100%;
+        width: 100%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
 }
 
-.navbar li .home::before{
-    content:" Home";
+.navbar li .home::before {
+    content: " Home";
     position: absolute;
     color: #0B0A0A;
     left: 0;
@@ -129,8 +133,8 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar li a::before{
-    content:" Projects";
+.navbar li a::before {
+    content: " Projects";
     position: absolute;
     color: #0B0A0A;
     left: 0;
@@ -139,9 +143,9 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar .contact::before{
-    content:" Contact";
-    position:absolute;
+.navbar .contact::before {
+    content: " Contact";
+    position: absolute;
     color: #0B0A0A;
     left: 0;
     width: 0%;
@@ -149,12 +153,12 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     height: 3.25rem;
     width: 100%;
 }
 
-.navbar.active{
+.navbar.active {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -162,22 +166,22 @@ header .clock {
     position: fixed;
     left: 0;
     right: 0;
-    padding-bottom: 3rem;
+    bottom: 0;
     width: 100%;
     background: #EDEDED;
     animation: 2s slideup;
     z-index: 1000;
 }
 
-.main{
+.main {
     padding: 1rem 0;
 }
 
-.main#blur.active{
+.main#blur.active {
     filter: blur(5px);
 }
 
-section{
+section {
     padding: 80px 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -191,29 +195,29 @@ section{
     font-size: 3rem;
 }
 
-.home h1{
+.home h1 {
     padding: -0.5rem 0;
     font-size: 3rem;
     animation: 2.5s slideup;
 }
 
-.home p{
+.home p {
     padding: 2rem 0;
     font-size: 22px;
     font-weight: 600;
     line-height: 2rem;
 }
 
-.flex{
+.flex {
     padding-top: 2rem;
 }
 
-.flex a{
+.flex a {
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.flex a:hover{
+.flex a:hover {
     font-size: 1.5rem;
 }
 
@@ -234,14 +238,14 @@ section{
     }
 
     header {
-        padding: 1rem 2rem;
+        padding: 0.5rem 1.65rem;
     }
 
     header .clock {
         display: none;
     }
 
-    header .details{
+    header .details {
         font-size: 12px;
     }
 
@@ -249,44 +253,44 @@ section{
         display: none;
     }
 
-    header .fa-bars{
+    header .fa-bars {
         font-size: 18px;
     }
 
     .menu-bar {
-        left: 87%;
+        left: 86%;
     }
 
     .navbar {
         position: relative;
-        bottom: 5rem;
+        bottom: 0;
         border-radius: 45px 45px 0 0;
     }
 
     .navbar li a {
         font-size: 55px;
-        height: 14vh;
-    } 
+        height: 16vh;
+    }
 
     .home h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
-    
+
     .home p {
-        font-size: 1.2rem;
-        line-height: 2rem;
+        font-size: 0.65rem;
+        line-height: 1.5rem;
         font-weight: 600;
-        word-spacing: -0.2em;
+        word-spacing: -3px;
 
     }
 
-    .flex a{
-        font-size: 1.5rem;
+    .flex a {
+        font-size: 1rem;
     }
 
 }
 
-@media (max-width: 744px) {
+/* @media (max-width: 744px) { */
 
 
 
@@ -299,23 +303,24 @@ section{
     }
 
     header {
-        padding: 0.8rem 3rem;
+        display: flex;
+        justify-content: space-around;
     }
 
     header .clock {
-        font-size: 25px;
+        font-size: 22px;
     }
 
-    header .details{
-        font-size: 16px;
+    header .details {
+        font-size: 15px;
     }
 
-    header .fa-bars{
+    header .fa-bars {
         font-size: 25px;
     }
 
     .menu-bar {
-        left: 90%;
+        left: 89.5%;
     }
 
     .navbar {
@@ -325,38 +330,54 @@ section{
 
     .navbar li a {
         font-size: 95px;
-        height: 16vh;
+        height: 18vh;
     }
+
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: #EDEDED;
+        animation: 2s slideup;
+        z-index: 1000;
+    }
+
 
     .home h1 {
         font-size: 3rem;
         padding-top: 3rem;
     }
-    
+
     .home p {
         padding-top: 3rem;
         font-size: 1.3rem;
         word-spacing: -2px;
     }
 
-    .flex a{
+    .flex a {
         font-size: 1.6rem;
     }
-    
+
 }
 
 
 /* Media Query for large screens  */
 @media (min-width: 1024px) {
-    /* header {
-        gap: 12rem;
+    header {
         padding-top: 0.5rem;
         padding-bottom: 0.7rem;
         padding-left: 3rem;
-        width: 100%;
+        /* width: 100%; */
     }
 
-    /* header .location {
+    header .location {
         display: block;
     }
 
@@ -377,12 +398,12 @@ section{
         font-size: 2.5rem;
         padding-top: 3rem;
     }
-    
+
     .home p {
         padding-top: 3rem;
         font-size: 1.3rem;
         word-spacing: -3px;
-    } */
+    }
 }
 
 
@@ -395,24 +416,18 @@ section{
 
 
 /* Screens with defects */
-/* @media (width: 375px){
-    
+@media (width: 375px) {
+    .menu-bar {
+        left: 89%;
+    }
+}
+
+@media (width: 425px) {
     header {
-        gap: 10.5rem;
+        padding-left: 1.5rem;
     }
 
     .menu-bar {
         left: 89%;
     }
 }
-
-@media (width: 425px){
-    header {
-        gap: 13rem;
-        padding-left: 3rem;
-    }
-
-    .menu-bar {
-        left: 90%;
-    }
-} */
