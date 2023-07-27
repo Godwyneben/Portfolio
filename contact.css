@@ -186,14 +186,9 @@ section {
     transition: transform 1s ease;
 }
 
-.contact {
-    text-align: justify;
-    font-size: 3rem;
-}
-
 .contact h1 {
     padding: -0.5rem 0;
-    font-size: 3rem;
+    font-size: 1rem;
     animation: 2.5s slideup;
 }
 
@@ -283,12 +278,13 @@ section {
 @media screen and (max-width: 600px) {
     body {
         margin: 0 0.5rem;
+        height: 100%;
+        max-height: 5rem;
     }
 
     .logo img {
         max-width: 25px;
         right: 8%;
-        top: 0;
     }
 
     header {
@@ -331,8 +327,7 @@ section {
     }
 
     .contact {
-        position: relative;
-        padding-top: 3rem;
+        padding-top: 4rem;
         padding-bottom: 0;
     }
 
@@ -367,6 +362,8 @@ section {
         padding: .9rem 0.6rem;
         font-size: 0.75rem;
         border-radius: 50%;
+        position: relative;
+        bottom: 1rem;
     }
 }
 
@@ -476,9 +473,8 @@ section {
 
 
     .contact h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
-
 
     .contact .row {
         position: relative;
@@ -493,12 +489,11 @@ section {
     }
 
     .socials a {
-        font-size: 2rem;
-        margin: 1.5rem 7rem;
+        font-size: 1.5rem;
+        margin: 1.5rem 6rem;
     }
 
 }
-
 
 
 
