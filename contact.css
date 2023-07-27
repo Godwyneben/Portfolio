@@ -373,7 +373,7 @@ section {
 
 
 /* Media Query for medium screens  */
-@media screen and (min-width: 750px) and (max-width: 766px) {
+@media screen and (min-width: 750px) and (max-width: 999px) {
     .logo img {
         max-width: 53px;
         position: absolute;
@@ -381,9 +381,7 @@ section {
     }
 
     header {
-        justify-content: unset;
-        padding-left: 3rem;
-        gap: 2rem;
+        padding-left: 2.5rem;
     }
 
     header .clock {
@@ -447,9 +445,7 @@ section {
 /* Media Query for large screens  */
 @media screen and (min-width: 1024px) {
     header {
-        justify-content: start;
         padding-left: 3rem;
-        gap: 18rem;
     }
 
     header .location {
@@ -526,8 +522,7 @@ section {
 
 @media screen and (min-width: 500px) and (max-width: 599px) {
     header{
-        justify-content: unset;
-        gap: 4.5rem;
+       padding: 0.7rem;
     }
     
     header .clock {
@@ -553,7 +548,7 @@ section {
     }
     
     .contact {
-        padding-top: 2.5rem;
+        padding-top: 4rem;
     }
 
     .contact h1{
@@ -568,16 +563,16 @@ section {
 
     .socials a {
         font-size: 1rem;
-        margin: 0.2rem 3rem;
+        margin: 0.2rem 2.5rem;
     }
-
 
 }
 
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
     header {
-        gap: 8rem;
+        justify-content: space-between;
+        padding: 0.7rem 2rem;
     }
 
     header .clock {
@@ -606,6 +601,30 @@ section {
     }
 
     .navbar.active {
-        bottom: 2.5rem;
+        bottom: 2rem;
     }
+
+    .contact {
+        padding-top: 5rem;
+    }
+
+    .contact h1{
+        font-size: 2rem;
+    }
+
+    .contact .row {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 2%);
+    }
+
+    .contact .row form textarea {
+        width: 93.5%;
+    }
+
+    .socials a {
+        font-size: 1.2rem;
+        margin: 0.4rem 2.7rem;
+    }
+
 }
