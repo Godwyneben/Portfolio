@@ -330,7 +330,7 @@ section {
         bottom: 1rem;
     }
 
-    .contact{
+    .contact {
         position: relative;
         padding-top: 3rem;
         padding-bottom: 0;
@@ -345,7 +345,7 @@ section {
         margin: 0.5rem 1rem;
     }
 
-    .contact .row form{
+    .contact .row form {
         border-radius: 4rem;
         padding: 1rem;
     }
@@ -391,15 +391,15 @@ section {
 /* Media Query for medium screens  */
 @media screen and (min-width: 768px) {
     .logo img {
-        max-width: 55px;
+        max-width: 53px;
         position: absolute;
-        right:8rem;
+        right: 1rem;
     }
 
     header {
         display: flex;
-        justify-content: space-around;
-        padding-left: -5rem;
+        justify-content: space-evenly;
+        margin-left: -3.5rem;
     }
 
     header .clock {
@@ -415,7 +415,7 @@ section {
     }
 
     .menu-bar {
-        left: 72%;
+        left: 98%;
     }
 
     .navbar {
@@ -431,45 +431,30 @@ section {
     .navbar.active {
         bottom: 3rem;
     }
- 
-    .contact{
-        position: relative;
-        padding-top: 3rem;
-        padding-bottom: 0;
-    }
 
     .contact h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
-    .socials a {
-        font-size: 0.85rem;
-        margin: 0.5rem 1rem;
-    }
-
-    .contact .row form{
-        border-radius: 4rem;
-        padding: 1rem;
-    }
-
-    .contact .row form .inputBox input,
-    .contact .row form textarea {
-        margin: 0.4rem 0;
-        padding: 0.4rem;
-        font-size: 0.7rem;
+    .contact .row form {
+        padding: 3rem;
     }
 
     .contact .row form textarea {
-        height: 10rem;
-        width: 100%;
-        font-size: 0.9rem;
+        width: 93.5%;
     }
 
     .contact .row form .btn {
-        padding: .9rem 0.6rem;
-        font-size: 0.75rem;
+        padding: 1.2rem 0.9rem;
+        font-size: 1.2rem;
         border-radius: 50%;
     }
+
+    .socials a {
+        font-size: 1.7rem;
+        margin: 1rem 3rem;
+    }
+
 }
 
 
@@ -477,7 +462,7 @@ section {
 
 /* Media Query for large screens  */
 @media screen and (min-width: 1024px) {
-    header{
+    header {
         justify-content: space-between;
         padding-bottom: 0.7rem;
         padding-left: 3rem;
@@ -500,11 +485,11 @@ section {
         height: 20vh;
     }
 
-    .navbar.active{
+    .navbar.active {
         bottom: 2.5rem;
     }
 
-    .contact{
+    .contact {
         position: relative;
         padding-top: 3rem;
         padding-bottom: 0;
@@ -519,7 +504,7 @@ section {
         margin: 0.5rem 1rem;
     }
 
-    .contact .row form{
+    .contact .row form {
         border-radius: 4rem;
         padding: 1rem;
     }
@@ -568,7 +553,7 @@ section {
     }
 }
 
-@media screen  and (min-width: 500px) and (max-width: 599px) {
+@media screen and (min-width: 500px) and (max-width: 599px) {
     header .clock {
         display: block;
         font-size: 18px;
@@ -582,7 +567,7 @@ section {
         font-size: 18px;
     }
 
-    header .location{
+    header .location {
         display: block;
         font-size: 12px;
     }
@@ -611,7 +596,7 @@ section {
         font-size: 18px;
     }
 
-    header .location{
+    header .location {
         font-size: 12px;
     }
 
