@@ -290,6 +290,7 @@ section {
 
 }
 
+
 @media (min-width:601px) and (max-width: 744px) {
     header {
         display: flex;
@@ -304,7 +305,6 @@ section {
         font-size: 5px;
     }
 }
-
 
 
 /* Media Query for medium screens  */

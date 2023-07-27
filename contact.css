@@ -119,7 +119,7 @@ header .clock {
     }
 }
 
-.navbar li .home::before {
+.navbar li a::before {
     content: " Home";
     position: absolute;
     color: #0B0A0A;
@@ -129,7 +129,7 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar li a::before {
+.navbar li .projects::before {
     content: " Projects";
     position: absolute;
     color: #0B0A0A;
@@ -139,8 +139,8 @@ header .clock {
     transition: all 0.3s;
 }
 
-.navbar .contact::before {
-    content: " Contact";
+.navbar .about::before {
+    content: " About";
     position: absolute;
     color: #0B0A0A;
     left: 0;
@@ -223,7 +223,7 @@ section {
     margin: 1rem;
     padding: 1rem;
     font-size: 1.7rem;
-    color: #333;
+    color: aliceblue;
     background: #0B0A0A;
     text-transform: none;
     border: 0.5px solid rgb(31, 30, 30);
@@ -345,7 +345,7 @@ section {
         margin: 0.5rem 1rem;
     }
 
-    .contact .row form {
+    .contact .row form{
         border-radius: 4rem;
         padding: 1rem;
     }
@@ -355,7 +355,107 @@ section {
         margin: 0.4rem 0;
         padding: 0.4rem;
         font-size: 0.7rem;
-        color: aliceblue;
+    }
+
+    .contact .row form textarea {
+        height: 10rem;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .contact .row form .btn {
+        padding: .9rem 0.6rem;
+        font-size: 0.75rem;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width:601px) and (max-width: 744px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .clock {
+        font-size: 22px;
+    }
+
+    header .details {
+        font-size: 5px;
+    }
+}
+
+
+
+/* Media Query for medium screens  */
+@media screen and (min-width: 768px) {
+    .logo img {
+        max-width: 55px;
+        position: absolute;
+        right: 1.5rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .clock {
+        font-size: 22px;
+    }
+
+    header .details {
+        font-size: 15px;
+    }
+
+    header .fa-bars {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        left: 89.5%;
+    }
+
+    .navbar {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .navbar li a {
+        font-size: 95px;
+        height: 18vh;
+    }
+
+    .navbar.active {
+        bottom: 3rem;
+    }
+
+    
+    .contact{
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .socials a {
+        font-size: 0.85rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .contact .row form{
+        border-radius: 4rem;
+        padding: 1rem;
+    }
+
+    .contact .row form .inputBox input,
+    .contact .row form textarea {
+        margin: 0.4rem 0;
+        padding: 0.4rem;
+        font-size: 0.7rem;
     }
 
     .contact .row form textarea {
@@ -372,3 +472,4 @@ section {
 
 
 }
+
