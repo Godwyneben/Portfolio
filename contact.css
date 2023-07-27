@@ -371,25 +371,9 @@ section {
 }
 
 
-@media (min-width:601px) and (max-width: 744px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    header .clock {
-        font-size: 22px;
-    }
-
-    header .details {
-        font-size: 5px;
-    }
-}
-
-
 
 /* Media Query for medium screens  */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 750px) and (max-width: 766px) {
     .logo img {
         max-width: 53px;
         position: absolute;
@@ -399,7 +383,7 @@ section {
     header {
         justify-content: unset;
         padding-left: 3rem;
-        gap: 6rem;
+        gap: 2rem;
     }
 
     header .clock {
@@ -463,6 +447,8 @@ section {
 /* Media Query for large screens  */
 @media screen and (min-width: 1024px) {
     header {
+        justify-content: start;
+        padding-left: 3rem;
         gap: 18rem;
     }
 
@@ -471,7 +457,7 @@ section {
     }
 
     .menu-bar {
-        left: 92.5%;
+        left: 91%;
     }
 
     .navbar {
@@ -489,12 +475,12 @@ section {
 
     .contact {
         position: relative;
-        padding-top: 3rem;
+        padding-top: 5rem;
     }
 
 
     .contact h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
 
@@ -511,14 +497,11 @@ section {
     }
 
     .socials a {
-        font-size: 1.7rem;
-        margin: 1rem 3rem;
+        font-size: 2rem;
+        margin: 1.5rem 7rem;
     }
 
 }
-
-
-
 
 
 
@@ -542,6 +525,11 @@ section {
 }
 
 @media screen and (min-width: 500px) and (max-width: 599px) {
+    header{
+        justify-content: unset;
+        gap: 4.5rem;
+    }
+    
     header .clock {
         display: block;
         font-size: 18px;
@@ -563,13 +551,33 @@ section {
     .menu-bar {
         left: 90%;
     }
+    
+    .contact {
+        padding-top: 2.5rem;
+    }
+
+    .contact h1{
+        font-size: 1.5rem;
+    }
+
+    .contact .row {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 2%);
+    }
+
+    .socials a {
+        font-size: 1rem;
+        margin: 0.2rem 3rem;
+    }
+
 
 }
 
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
     header {
-        justify-content: space-around;
+        gap: 8rem;
     }
 
     header .clock {
@@ -589,7 +597,7 @@ section {
     }
 
     .menu-bar {
-        left: 88%;
+        left: 90%;
     }
 
     .navbar li a {
