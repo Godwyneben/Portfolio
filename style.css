@@ -17,7 +17,7 @@ html {
 body {
     position: relative;
     font-family: monospace;
-    margin: 0 2rem;
+    margin: 0 -3rem;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -60,8 +60,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.6rem;
-    padding-bottom: 0.85rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.8rem;
+    padding-left: 2rem;
 }
 
 header .details a {
@@ -78,7 +79,7 @@ header .clock{
 .menu-bar {
     position: absolute;
     top: 50%;
-    right: 2%;
+    left: 90%;
     cursor: pointer;
     display: block;
 }
@@ -282,6 +283,7 @@ section {
 
 .projects .box-container .box img {
     height: 100%;
+    width: 100%;
 }
 
 .projects .box-container .box .content {
@@ -333,7 +335,7 @@ section {
 /* Media Queries */
 
 /* Media Query for small screens  */
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
     html {
         font-size: 46%;
     }
@@ -348,9 +350,7 @@ section {
     }
 
     header {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        padding-left: 2.3rem;
+        padding: 1rem 2rem;
     }
 
     header .clock {
@@ -370,7 +370,7 @@ section {
     }
 
     .menu-bar {
-        left: 82%;
+        left: 85%;
     }
 
     .navbar {
@@ -446,7 +446,7 @@ section {
 /* Media Query for medium screens  */
 @media screen and (min-width: 750px) and (max-width: 999px){
     body {
-        margin: 0 -3rem;
+        margin: 0 -3.5rem;
     }
 
     .logo img {
@@ -456,9 +456,7 @@ section {
     }
 
     header {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 
     header .clock {
@@ -478,7 +476,7 @@ section {
     }
 
     .menu-bar {
-        left: 89%;
+        left: 87%;
     }
 
     .navbar {
@@ -546,21 +544,21 @@ section {
 
 
 /* Media Query for large screens  */
-@media (min-width: 1024px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-left: 4.6rem;
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0 -3rem;
     }
 
-    header .location {
-        display: block;
+    header {
+        padding-left: 2rem;
+    }
+
+    header .fa-bars{
+        font-size: 22px;
     }
 
     .menu-bar {
-        left: 89%;
+        left: 94%;
     }
 
     .navbar {
@@ -569,7 +567,11 @@ section {
 
     .navbar li a {
         font-size: 95px;
-        height: 16vh;
+        height: 20vh;
+    }
+
+    .navbar.active {
+        bottom: 2.5rem;
     }
 
     .home h1 {
@@ -587,31 +589,99 @@ section {
 
 
 
-
-
-
-
-
-
 /* Screens with defects */
-@media (width: 375px){
-    
-    header {
-        gap: 8.5rem;
-    }
-
+@media (width: 375px){    
     .menu-bar {
-        left: 82%;
+        left: 89.5%;
     }
 }
 
 @media (width: 425px){
     header {
-        gap: 11rem;
         padding-left: 2.5rem;
     }
 
     .menu-bar {
-        left: 83.5%;
+        left: 90%;
     }
+}
+
+@media screen and (min-width: 375px) and (max-width: 599px) {
+    header{
+       padding: 0.7rem 2.1rem;
+    }
+    
+    header .clock {
+        display: block;
+        font-size: 15px;
+    }
+
+    header .details {
+        display: block;
+        font-size: 10px;
+    }
+
+    header .fa-bars {
+        font-size: 15px;
+    }
+
+    header .location {
+        display: block;
+        font-size: 10px;
+    }
+
+    .menu-bar {
+        left: 91%;
+    }
+
+    .navbar.active {
+        bottom: 3rem;
+    }
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    header {
+        justify-content: space-between;
+        padding: 0.7rem 2rem;
+    }
+
+    header .clock {
+        font-size: 18px;
+    }
+
+    header .details {
+        font-size: 12px;
+    }
+
+    header .fa-bars {
+        font-size: 18px;
+    }
+
+    header .location {
+        font-size: 12px;
+    }
+
+    .menu-bar {
+        left: 92.5%;
+    }
+
+    .navbar li a {
+        font-size: 80px;
+        height: 18vh;
+    }
+
+    .navbar.active {
+        bottom: 2rem;
+    }
+
+    .home h1{
+        font-size: 2.5rem;
+    }
+
+    .home p{
+        font-size: 1rem;
+    } 
+
 }

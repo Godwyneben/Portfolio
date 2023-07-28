@@ -288,7 +288,7 @@ section {
     }
 
     header {
-        padding: 0.5rem 1.3rem;
+        padding: 0.3rem 1.3rem;
     }
 
     header .clock {
@@ -445,10 +445,6 @@ section {
         padding-left: 3rem;
     }
 
-    header .location {
-        display: block;
-    }
-
     .menu-bar {
         left: 91%;
     }
@@ -517,7 +513,7 @@ section {
 
 @media screen and (min-width: 500px) and (max-width: 599px) {
     header{
-       padding: 0.7rem;
+       padding: 0.35rem 1rem;
     }
     
     header .clock {
@@ -539,11 +535,11 @@ section {
     }
 
     .menu-bar {
-        left: 90%;
+        left: 92%;
     }
     
     .contact {
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
 
     .contact h1{
