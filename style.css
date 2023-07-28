@@ -232,14 +232,6 @@ section {
     line-height: 2rem;
 }
 
-.home > i{
-    font-size: 1.5rem;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    padding: 2.3rem 0;
-}
-
 .projects {
     display: block;
 }
@@ -335,7 +327,7 @@ section {
 /* Media Queries */
 
 /* Media Query for small screens  */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     html {
         font-size: 46%;
     }
@@ -350,7 +342,7 @@ section {
     }
 
     header {
-        padding: 1rem 2rem;
+        padding: 1rem 2.3rem;
     }
 
     header .clock {
@@ -370,12 +362,12 @@ section {
     }
 
     .menu-bar {
-        left: 85%;
+        left: 87%;
     }
 
     .navbar {
         position: relative;
-        bottom: 5rem;
+        bottom: 0;
         border-radius: 45px 45px 0 0;
     }
 
@@ -383,6 +375,11 @@ section {
         font-size: 55px;
         height: 14vh;
     }
+
+    .navbar.active {
+        bottom: 4rem;
+    }
+
 
     section {
         padding: 20px 3rem;
@@ -397,10 +394,6 @@ section {
         padding-top: 4rem;
         font-size: 1.5rem;
         word-spacing: -3px;
-    }
-    
-    .home > i{
-        display: none;
     }
 
     .projects {
@@ -445,18 +438,15 @@ section {
 
 /* Media Query for medium screens  */
 @media screen and (min-width: 750px) and (max-width: 999px){
-    body {
-        margin: 0 -3.5rem;
-    }
 
     .logo img {
         max-width: 45px;
         position: absolute;
-        right: 4.5rem;
+        /* right: 4.5rem; */
     }
 
     header {
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
     header .clock {
@@ -472,11 +462,11 @@ section {
     } 
 
     header .fa-bars{
-        font-size: 22px;
+        font-size: 23px;
     }
 
     .menu-bar {
-        left: 87%;
+        left: 93%;
     }
 
     .navbar {
@@ -589,56 +579,66 @@ section {
 
 
 
-/* Screens with defects */
-@media (width: 375px){    
-    .menu-bar {
-        left: 89.5%;
-    }
-}
-
-@media (width: 425px){
-    header {
-        padding-left: 2.5rem;
-    }
-
-    .menu-bar {
-        left: 90%;
-    }
-}
-
-@media screen and (min-width: 375px) and (max-width: 599px) {
+/* Special Screens */
+@media screen and (min-width: 375px) and (max-width: 569px) {
     header{
-       padding: 0.7rem 2.1rem;
+       padding: 1.5rem 2.3rem;
     }
     
     header .clock {
         display: block;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     header .details {
         display: block;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     header .fa-bars {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     header .location {
         display: block;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .menu-bar {
-        left: 91%;
+        left: 92%;
     }
 
     .navbar.active {
         bottom: 3rem;
     }
-
 }
+
+@media (width: 320px){
+    .menu-bar {
+        left: 87.5%;
+    }
+}
+
+@media (width: 375px){
+    .menu-bar {
+        left: 90.5%;
+    }
+}
+
+
+@media (width: 425px){
+    .menu-bar {
+        left: 91%;
+    }
+}
+
+@media (min-width: 480px){
+    .menu-bar {
+        left: 93%;
+    }
+}
+
+
 
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
@@ -683,5 +683,15 @@ section {
     .home p{
         font-size: 1rem;
     } 
+
+    .projects {
+        position: relative;
+        top: -6rem;
+    }
+
+    .footer {
+        position: relative;
+        margin-top: -9rem;
+    }
 
 }
