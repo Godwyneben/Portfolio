@@ -442,11 +442,10 @@ section {
     .logo img {
         max-width: 45px;
         position: absolute;
-        /* right: 4.5rem; */
     }
 
     header {
-        padding-left: 2rem;
+        padding-left: 1.85rem;
     }
 
     header .clock {
@@ -458,7 +457,7 @@ section {
     }
 
     header .location {
-        font-size: 12px;
+        font-size: 14px;
     } 
 
     header .fa-bars{
@@ -466,7 +465,8 @@ section {
     }
 
     .menu-bar {
-        left: 93%;
+        position: relative;
+        left: 7%;
     }
 
     .navbar {
@@ -638,7 +638,12 @@ section {
     }
 }
 
-
+@media (width: 768px){
+   header{
+    justify-content: unset;
+    gap: 7rem;
+   }
+}
 
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
