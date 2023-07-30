@@ -70,7 +70,7 @@ header .details a {
     text-decoration: none;
 }
 
-header .clock{
+header .clock {
     font-weight: 600;
     font-size: 22px;
     background-color: none;
@@ -242,11 +242,12 @@ section {
     padding-bottom: 2rem;
 }
 
-.projects .flex > i, h1 {
+.projects .flex>i,
+h1 {
     font-size: 1.5rem;
 }
 
-.projects .flex > h1 {
+.projects .flex>h1 {
     text-shadow: 5px 10px 10px #fff;
 }
 
@@ -318,7 +319,8 @@ section {
     padding-bottom: -2rem;
 }
 
-.footer a, i {
+.footer a,
+i {
     text-decoration: none;
 }
 
@@ -349,7 +351,7 @@ section {
         display: none;
     }
 
-    header .details{
+    header .details {
         font-size: 9px;
     }
 
@@ -357,7 +359,7 @@ section {
         display: none;
     }
 
-    header .fa-bars{
+    header .fa-bars {
         font-size: 15px;
     }
 
@@ -384,12 +386,12 @@ section {
     section {
         padding: 20px 3rem;
     }
-    
+
     .home h1 {
         font-size: 3rem;
         padding-top: 8rem;
     }
-    
+
     .home p {
         padding-top: 4rem;
         font-size: 1.5rem;
@@ -401,7 +403,8 @@ section {
         top: -3rem;
     }
 
-    .projects .flex i, h1 {
+    .projects .flex i,
+    h1 {
         font-size: 2rem;
     }
 
@@ -409,24 +412,24 @@ section {
         flex: 1 1 30rem;
         height: 19rem;
     }
-    
+
     .projects .box-container .box img {
         height: 100%;
         width: 100%;
-    } 
-    
+    }
+
     .projects .box-container .box .content h3 {
         padding-bottom: 2rem;
     }
-    
+
     .projects .box-container .box .content a {
         font-size: 2rem;
     }
-    
+
     .projects .box-container .box .content a:hover {
         font-size: 2.5rem;
     }
-    
+
     .footer .flex {
         font-size: 1.5rem;
         gap: 1.5rem;
@@ -437,7 +440,7 @@ section {
 
 
 /* Media Query for medium screens  */
-@media screen and (min-width: 750px) and (max-width: 999px){
+@media screen and (min-width: 750px) and (max-width: 999px) {
 
     .logo img {
         max-width: 45px;
@@ -445,6 +448,8 @@ section {
     }
 
     header {
+        justify-content: unset;
+        gap: 7rem;
         padding-left: 1.85rem;
     }
 
@@ -452,15 +457,15 @@ section {
         font-size: 20px;
     }
 
-    header .details{
+    header .details {
         font-size: 14px;
     }
 
     header .location {
         font-size: 14px;
-    } 
+    }
 
-    header .fa-bars{
+    header .fa-bars {
         font-size: 23px;
     }
 
@@ -483,7 +488,7 @@ section {
         font-size: 2.5rem;
         padding-top: 3rem;
     }
-    
+
     .home p {
         padding-top: 3rem;
         font-size: 1rem;
@@ -495,7 +500,8 @@ section {
         top: -3rem;
     }
 
-    .projects .flex i, h1 {
+    .projects .flex i,
+    h1 {
         font-size: 2rem;
         padding-bottom: 1.5rem;
     }
@@ -504,25 +510,25 @@ section {
         flex: 1 1 30rem;
         height: 19rem;
     }
-    
+
     .projects .box-container .box img {
         height: 100%;
         width: 100%;
         /* object-fit: cover; */
-    } 
-    
+    }
+
     .projects .box-container .box .content h3 {
         padding-bottom: 2rem;
     }
-    
+
     .projects .box-container .box .content a {
         font-size: 2rem;
     }
-    
+
     .projects .box-container .box .content a:hover {
         font-size: 2.5rem;
     }
-    
+
     .footer .flex {
         font-size: 1.5rem;
         gap: 1.5rem;
@@ -543,12 +549,12 @@ section {
         padding-left: 2rem;
     }
 
-    header .fa-bars{
+    header .fa-bars {
         font-size: 22px;
     }
 
     .menu-bar {
-        left: 94%;
+        left: 9%;
     }
 
     .navbar {
@@ -568,11 +574,22 @@ section {
         font-size: 2.5rem;
         padding-top: 3rem;
     }
-    
+
     .home p {
         padding-top: 3rem;
         font-size: 1.3rem;
         word-spacing: -3px;
+    }
+
+    .projects .box-container .box-2,
+    .box-4,
+    .box-6 {
+        margin-top: 0;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
     }
 }
 
@@ -581,10 +598,10 @@ section {
 
 /* Special Screens */
 @media screen and (min-width: 375px) and (max-width: 569px) {
-    header{
-       padding: 1.5rem 2.3rem;
+    header {
+        padding: 1.5rem 2.3rem;
     }
-    
+
     header .clock {
         display: block;
         font-size: 13px;
@@ -613,38 +630,30 @@ section {
     }
 }
 
-@media (width: 320px){
+@media (width: 320px) {
     .menu-bar {
         left: 87.5%;
     }
 }
 
-@media (width: 375px){
+@media (width: 375px) {
     .menu-bar {
         left: 90.5%;
     }
 }
 
 
-@media (width: 425px){
+@media (width: 425px) {
     .menu-bar {
         left: 91%;
     }
 }
 
-@media (min-width: 480px){
+@media (min-width: 480px) {
     .menu-bar {
         left: 93%;
     }
 }
-
-@media (width: 768px){
-   header{
-    justify-content: unset;
-    gap: 7rem;
-   }
-}
-
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
     header {
@@ -681,13 +690,13 @@ section {
         bottom: 2rem;
     }
 
-    .home h1{
+    .home h1 {
         font-size: 2.5rem;
     }
 
-    .home p{
+    .home p {
         font-size: 1rem;
-    } 
+    }
 
     .projects {
         position: relative;
