@@ -550,6 +550,11 @@ i {
         padding-left: 3rem;
     }
 
+    header .fa-bars{
+        /* position: absolute; */
+        left: 95%;
+    }
+
     .navbar {
         margin-top: 12rem;
     }
