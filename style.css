@@ -17,7 +17,7 @@ html {
 body {
     position: relative;
     font-family: monospace;
-    margin: 0 -3rem;
+    padding: 0 1rem;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -263,7 +263,7 @@ h1 {
     box-shadow: 0 0.5rem 1rem rgba(151, 150, 150, 0.39);
     border: 0.2rem solid #fff;
     border-radius: .5rem;
-    flex: 1 1 20rem;
+    flex: 1 1 30rem;
     height: 15rem;
     position: relative;
 }
@@ -335,7 +335,7 @@ i {
     }
 
     body {
-        margin: 0 -0.5rem;
+        padding: 0 0;
         height: 100vh;
     }
 
@@ -344,7 +344,7 @@ i {
     }
 
     header {
-        padding: 1rem 2.3rem;
+        padding: 1rem 3rem;
     }
 
     header .clock {
@@ -361,10 +361,6 @@ i {
 
     header .fa-bars {
         font-size: 15px;
-    }
-
-    .menu-bar {
-        left: 87%;
     }
 
     .navbar {
@@ -441,6 +437,9 @@ i {
 
 /* Media Query for medium screens  */
 @media screen and (min-width: 750px) and (max-width: 999px) {
+    body {
+        padding: 0 0;
+    }
 
     .logo img {
         max-width: 45px;
@@ -448,9 +447,7 @@ i {
     }
 
     header {
-        justify-content: unset;
-        gap: 7rem;
-        padding-left: 1.85rem;
+        padding-left: 2rem;
     }
 
     header .clock {
@@ -470,8 +467,7 @@ i {
     }
 
     .menu-bar {
-        position: relative;
-        left: 7%;
+        position: absolute;
     }
 
     .navbar {
@@ -495,6 +491,11 @@ i {
         word-spacing: -3px;
     }
 
+    section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .projects {
         position: relative;
         top: -3rem;
@@ -507,8 +508,8 @@ i {
     }
 
     .projects .box-container .box {
-        flex: 1 1 30rem;
-        height: 19rem;
+        flex: 1 1 20rem;
+        height: 15rem;
     }
 
     .projects .box-container .box img {
@@ -540,21 +541,13 @@ i {
 
 
 /* Media Query for large screens  */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     body {
-        margin: 0 -3rem;
+        max-height: 50vh;
     }
 
     header {
-        padding-left: 2rem;
-    }
-
-    header .fa-bars {
-        font-size: 22px;
-    }
-
-    .menu-bar {
-        left: 9%;
+        padding-left: 3rem;
     }
 
     .navbar {
@@ -581,25 +574,25 @@ i {
         word-spacing: -3px;
     }
 
+    section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .projects .box-container .box-2,
     .box-4,
     .box-6 {
         margin-top: 0;
     }
 
-    .footer {
-        position: relative;
-        bottom: 0;
-    }
 }
-
 
 
 
 /* Special Screens */
 @media screen and (min-width: 375px) and (max-width: 569px) {
     header {
-        padding: 1.5rem 2.3rem;
+        padding: 1.5rem 2.75rem;
     }
 
     header .clock {
@@ -628,6 +621,7 @@ i {
     .navbar.active {
         bottom: 3rem;
     }
+    
 }
 
 @media (width: 320px) {
@@ -650,15 +644,41 @@ i {
 }
 
 @media (min-width: 480px) {
+    
+    header .clock {
+        display: block;
+        font-size: 18px;
+    }
+
+    header .details {
+        font-size: 12px;
+    }
+
+    header .fa-bars {
+        font-size: 16px;
+    }
+
+    header .location {
+        display: block;
+        font-size: 12px;
+    }
+
     .menu-bar {
         left: 93%;
     }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
+    .logo{
+        position: absolute;
+        top: 0;
+        right: 2rem;
+    }
+    
     header {
         justify-content: space-between;
-        padding: 0.7rem 2rem;
+        padding: 0.5rem 1.45rem;
     }
 
     header .clock {
@@ -678,7 +698,7 @@ i {
     }
 
     .menu-bar {
-        left: 92.5%;
+        left: 93%;
     }
 
     .navbar li a {
@@ -696,6 +716,11 @@ i {
 
     .home p {
         font-size: 1rem;
+    }
+
+    section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .projects {
